@@ -3,7 +3,7 @@
 <html lang="pt">
 <head>
 <meta charset="UTF-8">
-<title>GG EXPRESS LDA | Eletricista Certificado em Lisboa</title>
+<title>GG EXPRESS LDA | Serviços Profissionais</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -15,51 +15,27 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
   background: black;
-  border-bottom: 1px solid #d4af37;
-}
-
-.logo {
-  color: #d4af37;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.whatsapp-top {
-  background: #25D366;
-  padding: 10px 15px;
-  border-radius: 5px;
-  color: white;
-  text-decoration: none;
-}
-
-.hero {
-  padding: 80px 20px;
+  padding: 20px;
   text-align: center;
-  background: linear-gradient(black, #111);
+  border-bottom: 2px solid #d4af37;
 }
 
-.hero h1 {
-  font-size: 38px;
+header h1 {
   color: #d4af37;
 }
 
-.hero p {
-  color: #ccc;
-  font-size: 18px;
+.section {
+  padding: 50px 20px;
+  text-align: center;
 }
 
 .btn {
-  padding: 15px 30px;
-  margin: 15px;
+  padding: 15px 25px;
+  margin: 10px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  font-size: 16px;
 }
 
 .btn-main {
@@ -68,18 +44,7 @@ header {
   font-weight: bold;
 }
 
-.btn-secondary {
-  background: transparent;
-  border: 1px solid #d4af37;
-  color: #d4af37;
-}
-
-.section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.services {
+.services, .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -87,34 +52,30 @@ header {
 
 .card {
   background: #111;
-  border: 1px solid #222;
-  margin: 15px;
-  padding: 25px;
-  width: 260px;
+  margin: 10px;
+  padding: 20px;
+  width: 250px;
   border-radius: 10px;
-  transition: 0.3s;
+  border: 1px solid #222;
 }
 
 .card:hover {
   border: 1px solid #d4af37;
-  transform: scale(1.05);
 }
 
-.highlight {
-  color: #d4af37;
-}
-
-.cta {
-  background: #d4af37;
-  color: black;
-  padding: 50px 20px;
+.gallery img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 footer {
   background: black;
   padding: 20px;
   text-align: center;
-  border-top: 1px solid #d4af37;
+  border-top: 2px solid #d4af37;
 }
 </style>
 
@@ -123,55 +84,54 @@ footer {
 <body>
 
 <header>
-<div class="logo">GG EXPRESS LDA</div>
-<a class="whatsapp-top" href="https://wa.me/351913889987">WhatsApp</a>
+<h1>GG EXPRESS LDA</h1>
+<p>Eletricidade • Instalações • Reparações</p>
 </header>
 
-<section class="hero">
-<h1>Eletricista Certificado em Lisboa</h1>
-<p>Serviços rápidos, seguros e profissionais ao domicílio</p>
+<section class="section">
+<h2>Serviços rápidos e profissionais em Lisboa</h2>
+<p>Atendimento ao domicílio com qualidade e confiança</p>
 
 <button class="btn btn-main" onclick="window.location.href='https://wa.me/351913889987'">
-Agendar Serviço
-</button>
-
-<button class="btn btn-secondary" onclick="window.location.href='tel:913889987'">
-Ligar Agora
+Agendar no WhatsApp
 </button>
 </section>
 
 <section class="section">
-<h2 class="highlight">Serviços Especializados</h2>
+<h2>Os nossos serviços</h2>
 
 <div class="services">
-<div class="card">⚡ Instalações Elétricas</div>
-<div class="card">🔧 Reparações Urgentes</div>
-<div class="card">🪟 Estores e Persianas</div>
+<div class="card">⚡ Instalações elétricas</div>
+<div class="card">🔧 Reparações</div>
+<div class="card">🪟 Estores e persianas</div>
 <div class="card">🚽 Autoclismos</div>
-<div class="card">🔥 Placas de Fogão</div>
-<div class="card">🏠 Instalação de Janelas</div>
+<div class="card">🔥 Placas de fogão</div>
+<div class="card">🏠 Instalação de janelas</div>
 </div>
 </section>
 
-<section class="section">
-<h2 class="highlight">Porque escolher a GG EXPRESS?</h2>
+<!-- GALERIA DE TRABALHOS -->
 
-<p>
-✔ Eletricista certificado<br>
-✔ Atendimento rápido em Lisboa<br>
-✔ Equipamentos modernos<br>
-✔ Serviço limpo e profissional<br>
-✔ Garantia de qualidade
-</p>
+<section class="section">
+<h2>Trabalhos realizados</h2>
+
+<div class="gallery">
+<img src="https://via.placeholder.com/300">
+<img src="https://via.placeholder.com/300">
+<img src="https://via.placeholder.com/300">
+</div>
+
 </section>
 
-<section class="cta">
-<h2>Precisa de um técnico agora?</h2>
-<p>Ligue ou envie mensagem e resolvemos hoje</p>
-
-<button class="btn btn-main" onclick="window.location.href='https://wa.me/351913889987'">
-Falar no WhatsApp
-</button>
+<section class="section">
+<h2>Porquê escolher a GG EXPRESS?</h2>
+<p>
+✔ Atendimento rápido<br>
+✔ Profissionalismo<br>
+✔ Técnicos qualificados<br>
+✔ Preços justos<br>
+✔ Serviço em Lisboa e arredores
+</p>
 </section>
 
 <footer>
@@ -181,3 +141,4 @@ Falar no WhatsApp
 
 </body>
 </html>
+
